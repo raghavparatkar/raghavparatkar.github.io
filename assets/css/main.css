@@ -2073,11 +2073,11 @@ input, select, textarea {
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				content: 'View on Github';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
-				left: 50%;
+				left: 45%;
 				line-height: 2.25em;
 				margin: -1.25em 0 0 -3em;
 				opacity: 0;
@@ -2526,8 +2526,9 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
+				background-color: #fdfdfd;
 				border-color: #5cc6a7;
+				color: #5cc6a7 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2593,7 +2594,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg3.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -3078,7 +3079,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg3.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
