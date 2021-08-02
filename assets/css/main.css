@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #a2a2a2;
 		font-family: "Lato", sans-serif;
-		font-size: 16pt;
+		font-size: 15pt;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -2252,11 +2252,6 @@ ul.icons {
     right: 0;
 }
 
-
-
-
-
-
 	.image {
 		border-radius: 0.35em;
 		border: 0;
@@ -2264,21 +2259,49 @@ ul.icons {
 		position: relative;
 	}
 
-		
 
+	.box {
+		position: relative;
+		display: inline-block;
+		-webkit-transition: all 0.6s 
+		cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.6s 
+		cubic-bezier(0.165, 0.84, 0.44, 1);
+	  }
+	  
+	  .box::after {
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 125%;
+		height: 125%; 
+		opacity: 0; 
+		-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+		
+	  }
+	  
+	  .box:hover{
+		-webkit-transform: scale(1.12, 1.12);
+		transform: scale(1.12, 1.12);
+	  }
+	  
+	  .box:hover::after {
+		  opacity: 1;
+	  }
 		.image.thumb {
 			text-align: center;
 		}
 
-			/* .image.thumb:after {
+			  /* .image.thumb:after {
 				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
-				content: 'Check it Out';
+				border: solid 3px rgba(175, 97, 97, 0.5);
+				color: rgb(141, 14, 14);
+				content: "ergtrhrthrtherrg";
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2292,16 +2315,12 @@ ul.icons {
 				text-decoration: none;
 				top: 50%;
 				white-space: nowrap;
-			} */
+			} 
 
-			/* .image.thumb:hover:after {
+			.image.thumb:hover:after {
 				opacity: 1.0;
-			} */
+			}   */
 
-			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
-				opacity: 1.0;
-			}
 
 		.image img {
 			border-radius: 0.35em;
