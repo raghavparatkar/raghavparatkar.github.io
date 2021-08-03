@@ -2767,6 +2767,32 @@ ul.icons {
 				background-color: #3eb08f;
 				border-color: #3eb08f;
 			}
+		
+			input[type="submit"].p2,
+			input[type="reset"].p2,
+			input[type="button"].p2,
+			.button.p2 {
+				background-color: #bf4949;
+				border-color: #bf4949;
+				color: #ffffff !important;
+			}
+	
+				input[type="submit"].p2:hover,
+				input[type="reset"].p2:hover,
+				input[type="button"].p2:hover,
+				.button.p2:hover {
+					background-color: #fdfdfd;
+					border-color: #c65c5c;
+					color: #c65c5c !important;
+				}
+	
+				input[type="submit"].p2:active,
+				input[type="reset"].p2:active,
+				input[type="button"].p2:active,
+				.button.p2:active {
+					background-color: #b03e3e;
+					border-color: #b03e3e;
+				}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
